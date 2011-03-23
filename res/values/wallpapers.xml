@@ -28,7 +28,7 @@
         <item>wallpaper_fitsnugly_8bit</item>
         <item>wallpaper_jai_cmbrickwall</item>
         <item>wallpaper_jai_cmceation</item>
-        <item>wallpaper_kanged_azenis2</item>
+        <item>wallpaper_hazybluedots</item>
         <item>wallpaper_jai_cmdiamondplate</item>
         <item>wallpaper_jai_cmmodern</item>
         <item>wallpaper_jai_cmmoderntint</item>
@@ -36,5 +36,27 @@
         <item>wallpaper_jai_cmskateteam</item>
         <item>wallpaper_jai_cmwoodedbg</item>
         <item>wallpaper_boobies</item>
+    </string-array>
+
+    <string-array name="info" translatable="false">
+        <item>CM Earth :: Fitsnugly</item>
+        <item>CM Chrome :: JaiThemes</item>
+        <item>Arrowd Blue :: Prash</item>
+        <item>Arrowd Green :: Prash</item>
+        <item>Arrowd Pink :: Prash</item>
+        <item>Love CM :: Prash</item>
+        <item>Nexus Surf :: Prash</item>
+        <item>Nexus 08 :: SatanR1</item>
+        <item>8-bit :: Fitsnugly</item>
+        <item>Brickwall :: JaiThemes</item>
+        <item>CMCeation :: JaiThemes</item>
+        <item>Hazy Blue Dots :: Google</item>
+        <item>Diamondplate :: JaiThemes</item>
+        <item>Modern :: JaiThemes</item>
+        <item>Modern-Tint :: JaiThemes</item>
+        <item>CM Orb :: JaiThemes</item>
+        <item>Skate Team :: JaiThemes</item>
+        <item>Wooded:: JaiThemes</item>
+        <item>Yeah, that. :: Arcee</item>
     </string-array>
 </resources>

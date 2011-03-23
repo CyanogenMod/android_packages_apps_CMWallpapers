@@ -29,6 +29,12 @@
         android:layout_weight="1.0"
         android:scaleType="fitCenter" />
 
+    <TextView android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center" />
+
     <Gallery android:id="@+id/gallery"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
