@@ -19,6 +19,7 @@
     <string-array name="wallpapers" translatable="false">
         <item>wallpaper_fitsnugly_cmearth</item>
         <item>wallpaper_jai_cmchrome</item>
+        <item>wallpaper_prash_revolutionary</item>
         <item>wallpaper_prash_arrowd_blue</item>
         <item>wallpaper_prash_arrowd_green</item>
         <item>wallpaper_prash_arrowd_pink</item>
@@ -41,6 +42,7 @@
     <string-array name="info" translatable="false">
         <item>CM Earth :: Fitsnugly</item>
         <item>CM Chrome :: JaiThemes</item>
+        <item>Revolutionary :: Prash</item>
         <item>Arrowd Blue :: Prash</item>
         <item>Arrowd Green :: Prash</item>
         <item>Arrowd Pink :: Prash</item>
