@@ -28,6 +28,11 @@
         <item>wallpaper_cm_nexus_08</item>
         <item>wallpaper_fitsnugly_8bit</item>
         <item>wallpaper_jai_cmbrickwall</item>
+        <item>wallpaper_michaelmedina_beachlogs</item>
+        <item>wallpaper_eklipze_notquitemono</item>
+        <item>wallpaper_eklipze_technicolor</item>
+        <item>wallpaper_beki1984_colorwave</item>
+        <item>wallpaper_keithswisher_samuraix</item>
         <item>wallpaper_jai_cmceation</item>
         <item>wallpaper_hazybluedots</item>
         <item>wallpaper_jai_cmdiamondplate</item>
@@ -51,6 +56,11 @@
         <item>Nexus 08 :: SatanR1</item>
         <item>8-bit :: Fitsnugly</item>
         <item>Brickwall :: JaiThemes</item>
+        <item>Beach Logs :: Michael Medina</item>
+        <item>Not Quite Mono :: Eklipze</item>
+        <item>Technicolor Stripes :: Eklipze</item>
+        <item>Color Wave :: Beki1984</item>
+        <item>Samurai X :: Keith Swisher</item>
         <item>CMCeation :: JaiThemes</item>
         <item>Hazy Blue Dots :: Google</item>
         <item>Diamondplate :: JaiThemes</item>
@@ -58,7 +68,7 @@
         <item>Modern-Tint :: JaiThemes</item>
         <item>CM Orb :: JaiThemes</item>
         <item>Skate Team :: JaiThemes</item>
-        <item>Wooded:: JaiThemes</item>
+        <item>Wooded :: JaiThemes</item>
         <item>Yeah, that. :: Hans Stieglitz, CC, modified by arcee</item>
     </string-array>
 </resources>
