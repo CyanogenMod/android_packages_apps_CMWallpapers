@@ -3,4 +3,5 @@
 <string name="app_name">CyanogenMod Wallpapers</string>
 <string name="app_label">CyanogenMod Wallpapers</string>
 <string name="set_wallpaper">Set wallpaper</string>
+<string name="no_wallpaper">No wallpaper</string>
 </resources>
