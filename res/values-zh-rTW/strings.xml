@@ -3,4 +3,5 @@
 <string name="app_name">CyanogenMod 桌布</string>
 <string name="app_label">CyanogenMod 桌布</string>
 <string name="set_wallpaper">設定桌布</string>
+<string name="no_wallpaper">無桌布</string>
 </resources>
