@@ -3,4 +3,5 @@
 <string name="app_name">Обои CyanogenMod</string>
 <string name="app_label">Обои CyanogenMod</string>
 <string name="set_wallpaper">Установить обои</string>
+<string name="no_wallpaper">Нет обоев</string>
 </resources>
