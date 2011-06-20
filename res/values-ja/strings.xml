@@ -3,4 +3,5 @@
 <string name="app_name">CyanogenMod壁紙</string>
 <string name="app_label">CyanogenMod壁紙</string>
 <string name="set_wallpaper">壁紙に設定</string>
+<string name="no_wallpaper">壁紙なし</string>
 </resources>
