@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">CyanogenMod Tapeter</string>
+<string name="app_label">CyanogenMod Tapeter</string>
+<string name="set_wallpaper">Sæt Tapet</string>
+<string name="no_wallpaper">Intet Tapet</string>
+</resources>
