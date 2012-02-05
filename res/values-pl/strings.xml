@@ -3,4 +3,5 @@
 <string name="app_name">Tapety CyanogenModa</string>
 <string name="app_label">Tapety CyanogenModa</string>
 <string name="set_wallpaper">Ustaw tapetę</string>
+<string name="no_wallpaper">Bez tapety</string>
 </resources>
