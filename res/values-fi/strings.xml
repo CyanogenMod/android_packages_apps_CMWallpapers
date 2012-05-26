@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">CyanogenMod taustakuvat</string>
+<string name="app_label">CyanogenMod taustakuvat</string>
+<string name="set_wallpaper">Aseta taustakuva</string>
+<string name="no_wallpaper">Ei taustakuvaa</string>
+</resources>
