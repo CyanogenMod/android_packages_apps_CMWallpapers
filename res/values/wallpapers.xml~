@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2009 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<resources>
+    <string-array name="wallpapers" translatable="false">
+        <item>wallpaper_fitsnugly_cmearth</item>
+        <item>wallpaper_jai_cmchrome</item>
+        <item>wallpaper_prash_revolutionary</item>
+        <item>wallpaper_prash_arrowd_blue</item>
+        <item>wallpaper_prash_arrowd_green</item>
+        <item>wallpaper_prash_arrowd_pink</item>
+        <item>wallpaper_prash_lovecm</item>
+        <item>wallpaper_prash_nexus_surf</item>
+        <item>wallpaper_cm_nexus_08</item>
+        <item>wallpaper_fitsnugly_8bit</item>
+        <item>wallpaper_jai_cmbrickwall</item>
+        <item>wallpaper_michaelmedina_beachlogs</item>
+        <item>wallpaper_eklipze_notquitemono</item>
+        <item>wallpaper_eklipze_technicolor</item>
+        <item>wallpaper_beki1984_colorwave</item>
+        <item>wallpaper_keithswisher_samuraix</item>
+        <item>wallpaper_jai_cmceation</item>
+        <item>wallpaper_hazybluedots</item>
+        <item>wallpaper_jai_cmdiamondplate</item>
+        <item>wallpaper_jai_cmmodern</item>
+        <item>wallpaper_jai_cmmoderntint</item>
+        <item>wallpaper_jai_cmorb</item>
+        <item>wallpaper_jai_cmskateteam</item>
+        <item>wallpaper_jai_cmwoodedbg</item>
+        <item>wallpaper_boobies</item>
+    </string-array>
+
+    <string-array name="info" translatable="false">
+        <item>CM Earth :: Fitsnugly</item>
+        <item>CM Chrome :: JaiThemes</item>
+        <item>Revolutionary :: Prash</item>
+        <item>Arrowd Blue :: Prash</item>
+        <item>Arrowd Green :: Prash</item>
+        <item>Arrowd Pink :: Prash</item>
+        <item>Love CM :: Prash</item>
+        <item>Nexus Surf :: Prash</item>
+        <item>Nexus 08 :: SatanR1</item>
+        <item>8-bit :: Fitsnugly</item>
+        <item>Brickwall :: JaiThemes</item>
+        <item>Beach Logs :: Michael Medina</item>
+        <item>Not Quite Mono :: Eklipze</item>
+        <item>Technicolor Stripes :: Eklipze</item>
+        <item>Color Wave :: Beki1984</item>
+        <item>Samurai X :: Keith Swisher</item>
+        <item>CMCeation :: JaiThemes</item>
+        <item>Hazy Blue Dots :: Google</item>
+        <item>Diamondplate :: JaiThemes</item>
+        <item>Modern :: JaiThemes</item>
+        <item>Modern-Tint :: JaiThemes</item>
+        <item>CM Orb :: JaiThemes</item>
+        <item>Skate Team :: JaiThemes</item>
+        <item>Wooded :: JaiThemes</item>
+        <item>Yeah, that. :: Hans Stieglitz, CC, modified by arcee</item>
+    </string-array>
+</resources>

@@ -17,58 +17,40 @@
 
 <resources>
     <string-array name="wallpapers" translatable="false">
-        <item>wallpaper_fitsnugly_cmearth</item>
-        <item>wallpaper_jai_cmchrome</item>
-        <item>wallpaper_prash_revolutionary</item>
-        <item>wallpaper_prash_arrowd_blue</item>
-        <item>wallpaper_prash_arrowd_green</item>
-        <item>wallpaper_prash_arrowd_pink</item>
-        <item>wallpaper_prash_lovecm</item>
-        <item>wallpaper_prash_nexus_surf</item>
-        <item>wallpaper_cm_nexus_08</item>
-        <item>wallpaper_fitsnugly_8bit</item>
-        <item>wallpaper_jai_cmbrickwall</item>
-        <item>wallpaper_michaelmedina_beachlogs</item>
-        <item>wallpaper_eklipze_notquitemono</item>
-        <item>wallpaper_eklipze_technicolor</item>
+        <item>wallpaper_prash_ohaimark</item>
+        <item>wallpaper_ashersimonds_cmpatternholodark</item>
+        <item>wallpaper_ashersimonds_cmpatternhololight</item>
+        <item>wallpaper_manup456_cid3d</item>
+        <item>wallpaper_nebkat_bokeh</item>
         <item>wallpaper_beki1984_colorwave</item>
-        <item>wallpaper_keithswisher_samuraix</item>
-        <item>wallpaper_jai_cmceation</item>
-        <item>wallpaper_hazybluedots</item>
-        <item>wallpaper_jai_cmdiamondplate</item>
-        <item>wallpaper_jai_cmmodern</item>
-        <item>wallpaper_jai_cmmoderntint</item>
-        <item>wallpaper_jai_cmorb</item>
-        <item>wallpaper_jai_cmskateteam</item>
-        <item>wallpaper_jai_cmwoodedbg</item>
-        <item>wallpaper_boobies</item>
+        <item>wallpaper_eklipze_cheshireyellow</item>
+        <item>wallpaper_eklipze_notquitemono</item>
+        <item>wallpaper_eklipze_technicolorstripes</item>
+        <item>wallpaper_th_shadowchess</item>
+        <item>wallpaper_nathanwalp_grass</item>
+ 	<item>wallpaper_mathewhanle_earlycorn</item>
+        <item>wallpaper_mathewhanle_defensivebutterfly</item>
+        <item>wallpaper_michaelmedina_beachlogs</item>
+        <item>wallpaper_alexanderwislsperger_melbourne</item>
+        <item>wallpaper_sarahhambleton_intensity</item>
     </string-array>
 
     <string-array name="info" translatable="false">
-        <item>CM Earth :: Fitsnugly</item>
-        <item>CM Chrome :: JaiThemes</item>
-        <item>Revolutionary :: Prash</item>
-        <item>Arrowd Blue :: Prash</item>
-        <item>Arrowd Green :: Prash</item>
-        <item>Arrowd Pink :: Prash</item>
-        <item>Love CM :: Prash</item>
-        <item>Nexus Surf :: Prash</item>
-        <item>Nexus 08 :: SatanR1</item>
-        <item>8-bit :: Fitsnugly</item>
-        <item>Brickwall :: JaiThemes</item>
-        <item>Beach Logs :: Michael Medina</item>
+        <item>Ohai Mark :: Prash</item>
+        <item>Pattern Holo Dark :: Asher Simonds</item>
+        <item>Pattern Holo Light :: Asher Simonds</item>
+        <item>Cid3D :: manup456</item>
+        <item>Bokeh :: nebkat</item>
+        <item>Color Wave :: beki1984</item>
+        <item>Cheshire Yellow :: Eklipze</item>
         <item>Not Quite Mono :: Eklipze</item>
         <item>Technicolor Stripes :: Eklipze</item>
-        <item>Color Wave :: Beki1984</item>
-        <item>Samurai X :: Keith Swisher</item>
-        <item>CMCeation :: JaiThemes</item>
-        <item>Hazy Blue Dots :: Google</item>
-        <item>Diamondplate :: JaiThemes</item>
-        <item>Modern :: JaiThemes</item>
-        <item>Modern-Tint :: JaiThemes</item>
-        <item>CM Orb :: JaiThemes</item>
-        <item>Skate Team :: JaiThemes</item>
-        <item>Wooded :: JaiThemes</item>
-        <item>Yeah, that. :: Hans Stieglitz, CC, modified by arcee</item>
+        <item>Shadow Chess :: TH</item>
+        <item>Grass :: Nathan Walp</item>
+        <item>Early Corn :: Mathew Hanle</item>
+        <item>Defensive Butterfly :: Mathew Hanle</item>
+        <item>Beach Logs :: Michael Medina</item>
+        <item>Melbourne :: Alexander Wislsperger</item>
+        <item>Intensity :: Sarah Hambleton</item>
     </string-array>
 </resources>
