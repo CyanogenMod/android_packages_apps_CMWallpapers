@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Imagini de fundal CyanogenMod</string>
+  <string name="app_label">Imagini de fundal CyanogenMod</string>
+  <string name="set_wallpaper">Aplică imaginea de fundal</string>
+  <string name="no_wallpaper">Fără imagine de fundal</string>
+</resources>
