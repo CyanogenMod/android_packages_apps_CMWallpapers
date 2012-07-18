@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">CyanogenMod Pozadine</string>
+<string name="app_label">CyanogenMod Pozadine</string>
+<string name="set_wallpaper">Postavi pozadinu</string>
+<string name="no_wallpaper">Nema pozadine</string>
+</resources>
