@@ -7,7 +7,7 @@
     <application android:label="@string/app_name" android:icon="@drawable/cyanogenmod_icon">
         <activity
             android:name="wallpaper"
-            android:label="@string/app_label"
+            android:label="@string/app_name"
             android:icon="@drawable/cyanogenmod_icon"
             android:screenOrientation="nosensor"
             android:finishOnCloseSystemDialogs="true">
