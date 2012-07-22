@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="app_name">CyanogenMod-achtergronden</string>
-<string name="app_label">CyanogenMod-achtergronden</string>
-<string name="set_wallpaper">Achtergrond instellen</string>
-<string name="no_wallpaper">Geen achtergrond</string>
+    <string name="app_name">CyanogenMod-achtergronden</string>
+    <string name="set_wallpaper">Achtergrond instellen</string>
+    <string name="no_wallpaper">Geen achtergrond</string>
 </resources>
