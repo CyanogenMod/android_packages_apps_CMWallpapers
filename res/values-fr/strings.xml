@@ -3,4 +3,5 @@
 <string name="app_name">Fonds d\'écran CyanogenMod</string>
 <string name="app_label">Fonds d\'écran CyanogenMod</string>
 <string name="set_wallpaper">Appliquer</string>
+<string name="no_wallpaper">Aucun fond d\'écran</string>
 </resources>
