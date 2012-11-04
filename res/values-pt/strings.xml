@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Papéis de parede CyanogenMod</string>
+    <string name="app_name">Papéis de parede CM</string>
     <string name="set_wallpaper">Definir papel de parede</string>
     <string name="no_wallpaper">Sem papel de parede</string>
 </resources>

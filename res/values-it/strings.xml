@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sfondi CyanogenMod</string>
+    <string name="app_name">Sfondi CM</string>
     <string name="set_wallpaper">Imposta sfondo</string>
     <string name="no_wallpaper">Niente sfondo</string>
 </resources>
