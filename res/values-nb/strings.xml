@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CyanogenMod Bakgrunnsbilder</string>
+    <string name="app_name">CM Bakgrunnsbilder</string>
     <string name="set_wallpaper">Velg bakgrunnsbilde</string>
 </resources>
