@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wallpaper CM</string>
+    <string name="set_wallpaper">Setel wallpaper</string>
+    <string name="no_wallpaper">Tidak ada wallpaper</string>
+</resources>
