@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CM taustapildid</string>
+    <string name="set_wallpaper">Määra taustapildiks</string>
+    <string name="no_wallpaper">Ei taustapilti</string>
+</resources>
