@@ -2,5 +2,5 @@
 <resources>
     <string name="app_name">CM taustapildid</string>
     <string name="set_wallpaper">Määra taustapildiks</string>
-    <string name="no_wallpaper">Ei taustapilti</string>
+    <string name="no_wallpaper">Taustapilti ei kasutata</string>
 </resources>
