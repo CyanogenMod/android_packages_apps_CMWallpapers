@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">CM Duvar Kağıtları</string>
     <string name="set_wallpaper">Duvar kağıdını ayarla</string>
     <string name="no_wallpaper">Duvar Kağıdı yok</string>
