@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.CMWallpapers;
+package org.cyanogenmod.CMWallpapers;
 
 import android.app.Activity;
 import android.content.res.Resources;
