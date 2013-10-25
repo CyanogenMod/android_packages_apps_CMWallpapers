@@ -16,38 +16,34 @@
 
 <resources>
     <string-array name="wallpapers" translatable="false">
-        <item>wallpaper_prash_ohaimark</item>
-        <item>wallpaper_ashersimonds_cmpatternholodark</item>
-        <item>wallpaper_ashersimonds_cmpatternhololight</item>
-        <item>wallpaper_manup456_cid3d</item>
-        <item>wallpaper_nebkat_bokeh</item>
-        <item>wallpaper_beki1984_colorwave</item>
-        <item>wallpaper_eklipze_cheshireyellow</item>
-        <item>wallpaper_eklipze_notquitemono</item>
-        <item>wallpaper_eklipze_technicolorstripes</item>
-        <item>wallpaper_th_shadowchess</item>
-        <item>wallpaper_mathewhanley_earlycorn</item>
-        <item>wallpaper_mathewhanley_defensivebutterfly</item>
-        <item>wallpaper_michaelmedina_beachlogs</item>
-        <item>wallpaper_alexanderwislsperger_melbourne</item>
-        <item>wallpaper_tylerhodge_blueperfection</item>
+        <item>mauve</item>
+        <item>winter_sunset</item>
+        <item>barnsley_silhouette</item>
+        <item>dystopia</item>
+        <item>theicestorm</item>
+        <item>frostmaple</item>
+        <item>maplebokeh</item>
+        <item>maplesunblaze</item>
+        <item>sunsetgrass</item>
+        <item>light_bursting_out</item>
+        <item>bladesplusdroplets</item>
+        <item>bladesplusfrost</item>
+        <item>decay</item>
     </string-array>
 
     <string-array name="info" translatable="false">
-        <item>Ohai Mark - Prash</item>
-        <item>Pattern Holo Dark - Asher Simonds</item>
-        <item>Pattern Holo Light - Asher Simonds</item>
-        <item>Cid3D - manup456</item>
-        <item>Bokeh - nebkat</item>
-        <item>Color Wave - beki1984</item>
-        <item>Cheshire Yellow - Eklipze</item>
-        <item>Not Quite Mono - Eklipze</item>
-        <item>Technicolor Stripes - Eklipze</item>
-        <item>Shadow Chess - TH</item>
-        <item>Early Corn - Mathew Hanley</item>
-        <item>Defensive Butterfly - Mathew Hanley</item>
-        <item>Beach Logs - Michael Medina</item>
-        <item>Melbourne - Alexander Wislsperger</item>
-        <item>Blue Perfection - Tyler Hodge</item>
+        <item>Mauve - Matthew Hanley</item>
+        <item>Winter Sunset - Matthew Hanley</item>
+        <item>Barnsley Silhouette - Matthew Hanley</item>
+        <item>Dystopia - Matthew Hanley</item>
+        <item>The Ice Storm - Henry Mason</item>
+        <item>Frost Maple - Henry Mason</item>
+        <item>Maple Bokeh - Henry Mason</item>
+        <item>Sunblaze Maple - Henry Mason</item>
+        <item>Sunset Grass - Henry Mason</item>
+        <item>Light Bursting Out - Matthew Hanley</item>
+        <item>Blades of Glory - Henry Mason</item>
+        <item>Green and White - Henry Mason</item>
+        <item>Decay - Henry Mason</item>
     </string-array>
 </resources>
