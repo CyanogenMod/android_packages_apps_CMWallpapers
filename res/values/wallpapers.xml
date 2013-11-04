@@ -16,6 +16,7 @@
 
 <resources>
     <string-array name="wallpapers" translatable="false">
+        <item>cmpattern_holodark</item>
         <item>mauve</item>
         <item>winter_sunset</item>
         <item>barnsley_silhouette</item>
@@ -32,6 +33,7 @@
     </string-array>
 
     <string-array name="info" translatable="false">
+        <item>Pattern Holo Dark - Asher Simonds</item>
         <item>Mauve - Matthew Hanley</item>
         <item>Winter Sunset - Matthew Hanley</item>
         <item>Barnsley Silhouette - Matthew Hanley</item>
