@@ -21,13 +21,15 @@
         <item>barnsley_silhouette</item>
         <item>dystopia</item>
         <item>theicestorm</item>
+        <item>tubetangle</item>
+        <item>acidwashedcid</item>
+        <item>blueice_modcircle</item>
         <item>frostmaple</item>
         <item>maplebokeh</item>
         <item>maplesunblaze</item>
         <item>sunsetgrass</item>
         <item>light_bursting_out</item>
         <item>bladesplusdroplets</item>
-        <item>bladesplusfrost</item>
         <item>decay</item>
     </string-array>
 
@@ -37,13 +39,15 @@
         <item>Barnsley Silhouette - Matthew Hanley</item>
         <item>Dystopia - Matthew Hanley</item>
         <item>The Ice Storm - Henry Mason</item>
+        <item>Tangled Up Tubes - Henry Mason</item>
+        <item>Acid-washed Cid - Noelle-Lynn Peregrino</item>
+        <item>Blue Ice w. ModCircle - Henry Mason</item>
         <item>Frost Maple - Henry Mason</item>
         <item>Maple Bokeh - Henry Mason</item>
         <item>Sunblaze Maple - Henry Mason</item>
         <item>Sunset Grass - Henry Mason</item>
         <item>Light Bursting Out - Matthew Hanley</item>
         <item>Blades of Glory - Henry Mason</item>
-        <item>Green and White - Henry Mason</item>
         <item>Decay - Henry Mason</item>
     </string-array>
 </resources>
