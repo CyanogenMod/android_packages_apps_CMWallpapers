@@ -21,6 +21,7 @@ import android.content.res.Resources;
 import android.graphics.BitmapFactory;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -29,6 +30,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.View.OnClickListener;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Gallery;
@@ -60,8 +62,14 @@ public class wallpaper extends Activity implements AdapterView.OnItemSelectedLis
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         findWallpapers();
+        
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window w = getWindow(); // in Activity's onCreate() for instance
+            w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION, WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+            w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
 
-        setContentView(R.layout.wallpaper_chooser);
+        setContentView(R.layout.wallpaper_chooser_2);
 
         mGallery = (Gallery) findViewById(R.id.gallery);
         mGallery.setAdapter(new ImageAdapter(this));
