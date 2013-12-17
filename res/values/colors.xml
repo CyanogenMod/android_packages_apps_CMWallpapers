@@ -14,7 +14,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string-array name="extra_wallpapers" translatable="false">
-    </string-array>
+<resources>
+    <color name="gallery_layout_background">#80000000</color>
 </resources>

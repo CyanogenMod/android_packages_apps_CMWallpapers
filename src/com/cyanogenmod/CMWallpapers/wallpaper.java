@@ -29,6 +29,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.View.OnClickListener;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Gallery;
@@ -60,6 +61,12 @@ public class wallpaper extends Activity implements AdapterView.OnItemSelectedLis
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         findWallpapers();
+
+        Window w = getWindow();
+        w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,
+                WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
+                WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
         setContentView(R.layout.wallpaper_chooser);
 
