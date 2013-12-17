@@ -17,33 +17,39 @@
 ** limitations under the License.
 */
 -->
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-
-    <ImageView android:id="@+id/wallpaper"
+    <ImageView
+        android:id="@+id/wallpaper"
         android:layout_width="fill_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1.0"
-        android:scaleType="fitCenter" />
-
-    <TextView android:id="@+id/info"
-        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:id="@+id/galleryLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:gravity="center" />
-
-    <Gallery android:id="@+id/gallery"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
-
-    <Button android:id="@+id/set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/set_wallpaper"
-        android:layout_gravity="center_horizontal" />
-
-</LinearLayout>
-
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gallery_layout_background"
+        android:fitsSystemWindows="true">
+        <TextView android:id="@+id/info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="6dp" />
+    	<Gallery android:id="@+id/gallery"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content" />
+    	<Button android:id="@+id/set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/set_wallpaper"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>
