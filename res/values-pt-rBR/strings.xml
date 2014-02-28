@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Imagini de fundal CM</string>
-  <string name="set_wallpaper">Setaţi imaginea de fundal</string>
-  <string name="no_wallpaper">Fără imagine de fundal</string>
+  <string name="app_name">Papéis de parede CM</string>
+  <string name="set_wallpaper">Definir papel de parede</string>
+  <string name="no_wallpaper">Sem papel de parede</string>
 </resources>
