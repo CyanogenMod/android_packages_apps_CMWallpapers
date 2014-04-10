@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Tapety CM</string>
-  <string name="set_wallpaper">Ustaw tapetę</string>
-  <string name="no_wallpaper">Brak tapety</string>
+  <string name="app_name">Papéis de parede CM</string>
+  <string name="set_wallpaper">Definir papel de parede</string>
+  <string name="no_wallpaper">Sem papel de parede</string>
 </resources>
