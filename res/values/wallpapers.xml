@@ -34,10 +34,10 @@
     </string-array>
 
     <string-array name="info" translatable="false">
-        <item>Mauve - Matthew Hanley</item>
-        <item>Winter Sunset - Matthew Hanley</item>
-        <item>Barnsley Silhouette - Matthew Hanley</item>
-        <item>Dystopia - Matthew Hanley</item>
+        <item>Mauve - Mathew Hanley</item>
+        <item>Winter Sunset - Mathew Hanley</item>
+        <item>Barnsley Silhouette - Mathew Hanley</item>
+        <item>Dystopia - Mathew Hanley</item>
         <item>The Ice Storm - Henry Mason</item>
         <item>Tangled Up Tubes - Henry Mason</item>
         <item>Acid-washed Cid - Noelle-Lynn Peregrino</item>
@@ -46,7 +46,7 @@
         <item>Maple Bokeh - Henry Mason</item>
         <item>Sunblaze Maple - Henry Mason</item>
         <item>Sunset Grass - Henry Mason</item>
-        <item>Light Bursting Out - Matthew Hanley</item>
+        <item>Light Bursting Out - Mathew Hanley</item>
         <item>Blades of Glory - Henry Mason</item>
         <item>Decay - Henry Mason</item>
     </string-array>
