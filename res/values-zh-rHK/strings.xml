@@ -15,7 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">CM 牆紙</string>
   <string name="set_wallpaper">設定牆紙</string>
   <string name="no_wallpaper">無牆紙</string>
