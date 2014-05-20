@@ -15,8 +15,8 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-  <string name="app_name">CM darbalaukio fonai</string>
-  <string name="set_wallpaper">Nustatyti darbalaukio foną</string>
-  <string name="no_wallpaper">Be darbalaukio fono</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">CM ekrano fonai</string>
+  <string name="set_wallpaper">Nustatyti ekrano foną</string>
+  <string name="no_wallpaper">Be ekrano fono</string>
 </resources>
