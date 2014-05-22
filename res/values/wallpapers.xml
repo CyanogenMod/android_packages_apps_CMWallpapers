@@ -16,36 +16,38 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="wallpapers" translatable="false">
+        <item>quartz</item>
+        <item>hexography_blue</item>
+        <item>network</item>
+        <item>hextract</item>
+        <item>heresjohnny</item>
+        <item>hexography_salmon</item>
+        <item>hanksite</item>
         <item>mauve</item>
-        <item>winter_sunset</item>
-        <item>barnsley_silhouette</item>
         <item>dystopia</item>
         <item>theicestorm</item>
-        <item>tubetangle</item>
-        <item>acidwashedcid</item>
-        <item>blueice_modcircle</item>
         <item>frostmaple</item>
         <item>maplebokeh</item>
         <item>maplesunblaze</item>
-        <item>sunsetgrass</item>
         <item>light_bursting_out</item>
         <item>bladesplusdroplets</item>
         <item>decay</item>
     </string-array>
 
     <string-array name="info" translatable="false">
+        <item>Quartz - Shane Long</item>
+        <item>Hexography Blue - Asher Simonds</item>
+        <item>Network - Shane Long</item>
+        <item>Hextract - Asher Simonds</item>
+        <item>Here\'s Johnny! - Shane Long</item>
+        <item>Hexography Salmon - Asher Simonds</item>
+        <item>Hanksite - Shane Long</item>
         <item>Mauve - Mathew Hanley</item>
-        <item>Winter Sunset - Mathew Hanley</item>
-        <item>Barnsley Silhouette - Mathew Hanley</item>
         <item>Dystopia - Mathew Hanley</item>
         <item>The Ice Storm - Henry Mason</item>
-        <item>Tangled Up Tubes - Henry Mason</item>
-        <item>Acid-washed Cid - Noelle-Lynn Peregrino</item>
-        <item>Blue Ice w. ModCircle - Henry Mason</item>
         <item>Frost Maple - Henry Mason</item>
         <item>Maple Bokeh - Henry Mason</item>
         <item>Sunblaze Maple - Henry Mason</item>
-        <item>Sunset Grass - Henry Mason</item>
         <item>Light Bursting Out - Mathew Hanley</item>
         <item>Blades of Glory - Henry Mason</item>
         <item>Decay - Henry Mason</item>
