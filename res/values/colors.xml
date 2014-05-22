@@ -15,5 +15,5 @@
      limitations under the License.
 -->
 <resources>
-    <color name="gallery_layout_background">#80000000</color>
+    <color name="gallery_layout_background">#AA000000</color>
 </resources>
