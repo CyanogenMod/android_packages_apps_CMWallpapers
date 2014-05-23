@@ -15,7 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">CM Tapety</string>
   <string name="set_wallpaper">Nastaviť tapetu</string>
   <string name="no_wallpaper">Žiadne tapety</string>
