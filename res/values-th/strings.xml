@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">CyanogenMod\nachtergronden</string>
-  <string name="set_wallpaper">Achtergrond instellen</string>
-  <string name="no_wallpaper">Geen achtergrond</string>
+  <string name="app_name">ภาพพื้นหลัง CM</string>
+  <string name="set_wallpaper">ตั้งภาพพื้นหลัง</string>
+  <string name="no_wallpaper">ไม่มีภาพพื้นหลัง</string>
 </resources>
