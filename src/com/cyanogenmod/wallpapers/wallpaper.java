@@ -17,9 +17,15 @@
 package com.cyanogenmod.wallpapers;
 
 import android.app.Activity;
+import android.app.WallpaperManager;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.BitmapFactory;
 import android.graphics.Bitmap;
+import android.graphics.Point;
+import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.AsyncTask;
@@ -36,13 +42,15 @@ import android.widget.Gallery;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
-
 
 public class wallpaper extends Activity implements AdapterView.OnItemSelectedListener,
         OnClickListener {
+
+    protected static final float WALLPAPER_SCREENS_SPAN = 2f;
+    private static final String PREF_KEY = "wallpaper_prefs";
+    protected static final String WALLPAPER_WIDTH_KEY = "wallpaper.width";
+    protected static final String WALLPAPER_HEIGHT_KEY = "wallpaper.height";
 
     private Gallery mGallery;
     private ImageView mImageView;
@@ -54,6 +62,7 @@ public class wallpaper extends Activity implements AdapterView.OnItemSelectedLis
     private ArrayList<Integer> mThumbs;
     private ArrayList<Integer> mImages;
     private WallpaperLoader mLoader;
+    private static SharedPreferences mPrefs;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -74,11 +83,14 @@ public class wallpaper extends Activity implements AdapterView.OnItemSelectedLis
         mGallery.setAdapter(new ImageAdapter(this));
         mGallery.setOnItemSelectedListener(this);
         mGallery.setCallbackDuringFling(false);
+        mGallery.setUnselectedAlpha(0.3f);
+        mGallery.setSpacing(getResources().getDimensionPixelSize(R.dimen.gallery_spacing));
 
         findViewById(R.id.set).setOnClickListener(this);
 
         mImageView = (ImageView) findViewById(R.id.wallpaper);
         mInfoView = (TextView) findViewById(R.id.info);
+        mPrefs = getSharedPreferences(PREF_KEY, Context.MODE_PRIVATE);
     }
 
     private void findWallpapers() {
@@ -131,6 +143,137 @@ public class wallpaper extends Activity implements AdapterView.OnItemSelectedLis
         mLoader = (WallpaperLoader) new WallpaperLoader().execute(position);
     }
 
+    protected boolean isScreenLarge(Resources res) {
+        Configuration config = res.getConfiguration();
+        return config.smallestScreenWidthDp >= 720;
+    }
+
+    protected Point getDefaultWallpaperSize(Resources res, WindowManager windowManager) {
+        Point minDims = new Point();
+        Point maxDims = new Point();
+        windowManager.getDefaultDisplay().getCurrentSizeRange(minDims, maxDims);
+
+        int maxDim = Math.max(maxDims.x, maxDims.y);
+        int minDim = Math.max(minDims.x, minDims.y);
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            Point realSize = new Point();
+            windowManager.getDefaultDisplay().getRealSize(realSize);
+            maxDim = Math.max(realSize.x, realSize.y);
+            minDim = Math.min(realSize.x, realSize.y);
+        }
+
+        // We need to ensure that there is enough extra space in the wallpaper
+        // for the intended
+        // parallax effects
+        final int defaultWidth, defaultHeight;
+        if (isScreenLarge(res)) {
+            defaultWidth = (int) (maxDim * wallpaperTravelToScreenWidthRatio(maxDim, minDim));
+            defaultHeight = maxDim;
+        } else {
+            defaultWidth = Math.max((int) (minDim * WALLPAPER_SCREENS_SPAN), maxDim);
+            defaultHeight = maxDim;
+        }
+        return new Point(defaultWidth, defaultHeight);
+    }
+
+    // As a ratio of screen height, the total distance we want the parallax effect to span
+    // horizontally
+    protected float wallpaperTravelToScreenWidthRatio(int width, int height) {
+        float aspectRatio = width / (float) height;
+
+        // At an aspect ratio of 16/10, the wallpaper parallax effect should span 1.5 * screen width
+        // At an aspect ratio of 10/16, the wallpaper parallax effect should span 1.2 * screen width
+        // We will use these two data points to extrapolate how much the wallpaper parallax effect
+        // to span (ie travel) at any aspect ratio:
+
+        final float ASPECT_RATIO_LANDSCAPE = 16/10f;
+        final float ASPECT_RATIO_PORTRAIT = 10/16f;
+        final float WALLPAPER_WIDTH_TO_SCREEN_RATIO_LANDSCAPE = 1.5f;
+        final float WALLPAPER_WIDTH_TO_SCREEN_RATIO_PORTRAIT = 1.2f;
+
+        // To find out the desired width at different aspect ratios, we use the following two
+        // formulas, where the coefficient on x is the aspect ratio (width/height):
+        //   (16/10)x + y = 1.5
+        //   (10/16)x + y = 1.2
+        // We solve for x and y and end up with a final formula:
+        final float x =
+            (WALLPAPER_WIDTH_TO_SCREEN_RATIO_LANDSCAPE - WALLPAPER_WIDTH_TO_SCREEN_RATIO_PORTRAIT) /
+            (ASPECT_RATIO_LANDSCAPE - ASPECT_RATIO_PORTRAIT);
+        final float y = WALLPAPER_WIDTH_TO_SCREEN_RATIO_PORTRAIT - x * ASPECT_RATIO_PORTRAIT;
+        return x * aspectRatio + y;
+    }
+
+    protected RectF getMaxCropRect(
+            int inWidth, int inHeight, int outWidth, int outHeight, boolean leftAligned) {
+        RectF cropRect = new RectF();
+        // Get a crop rect that will fit this
+        if (inWidth / (float) inHeight > outWidth / (float) outHeight) {
+             cropRect.top = 0;
+             cropRect.bottom = inHeight;
+             cropRect.left = (inWidth - (outWidth / (float) outHeight) * inHeight) / 2;
+             cropRect.right = inWidth - cropRect.left;
+             if (leftAligned) {
+                 cropRect.right -= cropRect.left;
+                 cropRect.left = 0;
+             }
+        } else {
+            cropRect.left = 0;
+            cropRect.right = inWidth;
+            cropRect.top = (inHeight - (outHeight / (float) outWidth) * inWidth) / 2;
+            cropRect.bottom = inHeight - cropRect.top;
+        }
+        return cropRect;
+    }
+
+    protected void cropImageAndSetWallpaper(int resId) {
+        Point outSize = getDefaultWallpaperSize(getResources(), getWindowManager());
+        final BitmapCropTask cropTask = new BitmapCropTask(this, getResources(), resId,
+                null, 0, outSize.x, outSize.y, true, false, null);
+        Point inSize = cropTask.getImageBounds();
+        final RectF crop = getMaxCropRect(inSize.x, inSize.y, outSize.x, outSize.y, false);
+        cropTask.setCropBounds(crop);
+        Runnable onEndCrop = new Runnable() {
+            public void run() {
+                Point point = cropTask.getImageBounds();
+                wallpaper.this.updateWallpaperDimensions(point.x, point.y);
+                setResult(Activity.RESULT_OK);
+                finish();
+            }
+        };
+        cropTask.setOnEndRunnable(onEndCrop);
+        cropTask.execute();
+    }
+
+    protected void updateWallpaperDimensions(int width, int height) {
+        SharedPreferences.Editor editor = mPrefs.edit();
+        if (width != 0 && height != 0) {
+            editor.putInt(WALLPAPER_WIDTH_KEY, width);
+            editor.putInt(WALLPAPER_HEIGHT_KEY, height);
+        } else {
+            editor.remove(WALLPAPER_WIDTH_KEY);
+            editor.remove(WALLPAPER_HEIGHT_KEY);
+        }
+        editor.commit();
+
+        suggestWallpaperDimension(getResources(), getWindowManager(), WallpaperManager.getInstance(this));
+    }
+
+    public void suggestWallpaperDimension(Resources res,
+            WindowManager windowManager,
+            final WallpaperManager wallpaperManager) {
+        final Point defaultWallpaperSize = getDefaultWallpaperSize(res, windowManager);
+
+        new Thread("suggestWallpaperDimension") {
+            public void run() {
+                // If we have saved a wallpaper width/height, use that instead
+                int savedWidth = mPrefs.getInt(WALLPAPER_WIDTH_KEY, defaultWallpaperSize.x);
+                int savedHeight = mPrefs.getInt(WALLPAPER_HEIGHT_KEY, defaultWallpaperSize.y);
+                wallpaperManager.suggestDesiredDimensions(savedWidth, savedHeight);
+            }
+        }.start();
+    }
+
     /*
      * When using touch if you tap an image it triggers both the onItemClick and
      * the onTouchEvent causing the wallpaper to be set twice. Ensure we only
@@ -142,14 +285,7 @@ public class wallpaper extends Activity implements AdapterView.OnItemSelectedLis
         }
 
         mIsWallpaperSet = true;
-        try {
-            InputStream stream = getResources().openRawResource(mImages.get(position));
-            setWallpaper(stream);
-            setResult(RESULT_OK);
-            finish();
-        } catch (IOException e) {
-            Log.e("Paperless System", "Failed to set wallpaper: " + e);
-        }
+        cropImageAndSetWallpaper(mImages.get(position));
     }
 
     public void onNothingSelected(AdapterView parent) {

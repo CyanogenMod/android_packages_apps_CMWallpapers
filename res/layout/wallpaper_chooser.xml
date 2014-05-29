@@ -31,7 +31,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingBottom="6dp"
         android:layout_alignParentBottom="true"
         android:background="@color/gallery_layout_background"
         android:fitsSystemWindows="true">
@@ -41,7 +40,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:gravity="center"
-            android:paddingBottom="6dp" />
+            android:paddingBottom="15dp" />
 
         <Gallery android:id="@+id/gallery"
             android:layout_width="fill_parent"
@@ -51,8 +50,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/set_wallpaper"
-            android:background="@android:color/transparent"
+            android:background="@*android:drawable/list_selector_holo_dark"
             android:layout_gravity="center_horizontal" />
+
     </LinearLayout>
 
 </RelativeLayout>
