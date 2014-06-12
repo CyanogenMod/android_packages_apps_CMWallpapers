@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">CM Позадине</string>
-  <string name="set_wallpaper">Постави позадину</string>
-  <string name="no_wallpaper">Без позадине</string>
+  <string name="app_name">CM Taustapildid</string>
+  <string name="set_wallpaper">Määra taustapildiks</string>
+  <string name="no_wallpaper">Taustapilt puudub</string>
 </resources>
