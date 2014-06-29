@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">CM darbalaukio fonai</string>
-  <string name="set_wallpaper">Nustatyti darbalaukio foną</string>
-  <string name="no_wallpaper">Be darbalaukio fono</string>
+  <string name="app_name">دیوارپۆش ساینۆجن</string>
+  <string name="set_wallpaper">دانانی دیوارپۆش </string>
+  <string name="no_wallpaper">دیوارپۆش نەبێت</string>
 </resources>

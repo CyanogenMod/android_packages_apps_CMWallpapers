@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">CM darbalaukio fonai</string>
-  <string name="set_wallpaper">Nustatyti darbalaukio foną</string>
-  <string name="no_wallpaper">Be darbalaukio fono</string>
+  <string name="app_name">CM 배경화면</string>
+  <string name="set_wallpaper">배경화면 설정</string>
+  <string name="no_wallpaper">배경화면 없음</string>
 </resources>
