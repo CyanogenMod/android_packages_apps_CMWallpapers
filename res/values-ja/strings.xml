@@ -18,5 +18,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">CM壁紙</string>
   <string name="set_wallpaper">壁紙を設定</string>
-  <string name="no_wallpaper">壁紙がありません</string>
+  <string name="no_wallpaper">壁紙なし</string>
 </resources>
