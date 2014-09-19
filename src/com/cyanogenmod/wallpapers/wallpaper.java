@@ -149,6 +149,15 @@ public class wallpaper extends Activity implements AdapterView.OnItemSelectedLis
     }
 
     protected Point getDefaultWallpaperSize(Resources res, WindowManager windowManager) {
+        // Uses suggested size if available
+        WallpaperManager wallpaperManager = WallpaperManager.getInstance(this);
+        int suggestedWidth = wallpaperManager.getDesiredMinimumWidth();
+        int suggestedHeight = wallpaperManager.getDesiredMinimumHeight();
+        if (suggestedWidth != 0 && suggestedHeight != 0) {
+            return new Point(suggestedWidth, suggestedHeight);
+        }
+
+        // Else, calculate desired size from screen size
         Point minDims = new Point();
         Point maxDims = new Point();
         windowManager.getDefaultDisplay().getCurrentSizeRange(minDims, maxDims);
