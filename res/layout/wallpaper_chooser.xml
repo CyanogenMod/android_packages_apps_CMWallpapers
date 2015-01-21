@@ -39,10 +39,12 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
+            android:textColor="@color/orange"
             android:gravity="center"
             android:paddingBottom="15dp" />
 
         <Gallery android:id="@+id/gallery"
+            android:background="@color/transparent_white_percent_10"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
 
@@ -50,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/set_wallpaper"
-            android:background="@*android:drawable/list_selector_holo_dark"
+            android:background="@color/sysCyan"
             android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
