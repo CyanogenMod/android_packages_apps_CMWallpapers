@@ -16,4 +16,6 @@
 -->
 <resources>
     <color name="gallery_layout_background">#AA000000</color>
+    <color name="cyanogen_blue">#00B1E5</color>
+    <color name="orange">#FFA500</color>
 </resources>
