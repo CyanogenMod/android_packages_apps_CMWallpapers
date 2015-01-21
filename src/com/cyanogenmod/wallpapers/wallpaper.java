@@ -71,11 +71,11 @@ public class wallpaper extends Activity implements AdapterView.OnItemSelectedLis
 
         findWallpapers();
 
+        //This is to allow full trans.
         Window w = getWindow();
-        w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,
-                WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
-                WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        WindowManager.LayoutParams wlp = w.getAttributes();
+        wlp.dimAmount=0f;
+        w.setAttributes(wlp);
 
         setContentView(R.layout.wallpaper_chooser);
 
