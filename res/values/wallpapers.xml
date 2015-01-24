@@ -32,6 +32,11 @@
         <item>light_bursting_out</item>
         <item>bladesplusdroplets</item>
         <item>decay</item>
+        <item>arc</item>
+        <item>harmony</item>
+        <item>headcase</item>
+        <item>iconoclast</item>
+        <item>slantstyle</item>
     </string-array>
 
     <string-array name="info" translatable="false">
@@ -51,5 +56,10 @@
         <item>Light Bursting Out - Mathew Hanley</item>
         <item>Blades of Glory - Henry Mason</item>
         <item>Decay - Henry Mason</item>
+        <item>Arc - Asher Simonds</item>
+        <item>Harmony - Asher Simonds</item>
+        <item>Headcase - Asher Simonds</item>
+        <item>Iconoclast - Asher Simonds</item>
+        <item>Slantstyle - Asher Simonds</item>
     </string-array>
 </resources>
