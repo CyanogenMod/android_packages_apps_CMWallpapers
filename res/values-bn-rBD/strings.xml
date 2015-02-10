@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Imagens de fundo CM</string>
-  <string name="set_wallpaper">Definir imagem de fundo</string>
-  <string name="no_wallpaper">Sem imagem de fundo</string>
+  <string name="app_name">সিএম ওয়ালপেপার সমূহ</string>
+  <string name="set_wallpaper">ওয়ালপেপার নির্ধারণ করুন</string>
+  <string name="no_wallpaper">ওয়ালপেপার ছাড়া</string>
 </resources>
