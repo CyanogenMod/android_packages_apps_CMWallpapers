@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">CM hormairudiak</string>
-  <string name="set_wallpaper">Hormairudia ezarri</string>
-  <string name="no_wallpaper">Hormairudirik ez</string>
+  <string name="app_name">Fondos de pantalla CM</string>
+  <string name="set_wallpaper">Establecer fondo de pantalla</string>
+  <string name="no_wallpaper">Sin fondo de pantalla</string>
 </resources>
