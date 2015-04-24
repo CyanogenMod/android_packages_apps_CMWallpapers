@@ -2,31 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.cyanogenmod.wallpapers">
 
-      <uses-permission android:name="android.permission.SET_WALLPAPER" />
-      <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
-
     <application android:label="@string/app_name" android:icon="@drawable/cyanogenmod_icon">
-        <activity
-            android:name="wallpaper"
-            android:label="@string/app_name"
-            android:icon="@drawable/cyanogenmod_icon"
-            android:screenOrientation="nosensor"
-            android:finishOnCloseSystemDialogs="true">
+        <receiver android:name=".PartnerWallpapers">
             <intent-filter>
-                <action android:name="android.intent.action.SET_WALLPAPER" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.android.launcher3.action.PARTNER_CUSTOMIZATION"/>
             </intent-filter>
-        </activity>
-
-        <activity
-            android:name="NoWallpaper"
-            android:label="@string/no_wallpaper"
-            android:icon="@drawable/nowallpaper_icon" >
-            <intent-filter>
-                <action android:name="android.intent.action.SET_WALLPAPER" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+        </receiver>
 
     </application>
 

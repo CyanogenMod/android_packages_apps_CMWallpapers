@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string-array name="wallpapers" translatable="false">
+    <string-array name="partner_wallpapers" translatable="false">
         <item>quartz</item>
         <item>hexography_blue</item>
         <item>network</item>
