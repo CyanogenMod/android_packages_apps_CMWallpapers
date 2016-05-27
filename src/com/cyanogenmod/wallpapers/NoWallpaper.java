@@ -19,15 +19,22 @@ package com.cyanogenmod.wallpapers;
 import android.app.Activity;
 import android.app.WallpaperManager;
 import android.os.Bundle;
+import android.view.View;
 
 public class NoWallpaper extends Activity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        finish();
+
+        setContentView(R.layout.wallpaper_preview);
+    }
+
+    public void setWallpaper(View v) {
         try {
             WallpaperManager wm = WallpaperManager.getInstance(this);
             wm.setResource(R.drawable.black);
         } catch (java.io.IOException e) {
         }
+        setResult(RESULT_OK);
+        finish();
     }
 }
