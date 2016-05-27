@@ -8,6 +8,7 @@
         <activity
             android:name=".NoWallpaper"
             android:label="@string/no_wallpaper"
+            android:theme="@style/Preview"
             android:icon="@drawable/nowallpaper_icon" >
             <intent-filter>
                 <action android:name="android.intent.action.SET_WALLPAPER" />
