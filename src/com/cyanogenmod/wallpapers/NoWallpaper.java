@@ -23,6 +23,7 @@ import android.os.Bundle;
 public class NoWallpaper extends Activity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
+        setResult(RESULT_OK);
         finish();
         try {
             WallpaperManager wm = WallpaperManager.getInstance(this);
