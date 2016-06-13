@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Fondos de pantalla de CM</string>
-  <string name="set_wallpaper">Establecer fondo de pantalla</string>
-  <string name="no_wallpaper">Sin fondo de pantalla</string>
+  <string name="app_name">CM వాల్‌పేపర్లు</string>
+  <string name="set_wallpaper">వాల్‌పేపర్‌ను సెట్ చేయి</string>
+  <string name="no_wallpaper">వాల్‌పేపర్ లేదు</string>
 </resources>
