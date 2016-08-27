@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Gambar latar CM</string>
-  <string name="set_wallpaper">Atur gambar latar</string>
-  <string name="no_wallpaper">Tidak ada gambar latar</string>
+  <string name="app_name">Wallpaper CM</string>
+  <string name="set_wallpaper">Atur wallpaper</string>
+  <string name="no_wallpaper">Tidak ada wallpaper</string>
 </resources>
